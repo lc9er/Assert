@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+Assert the actual string value is not like the expected value.
+.DESCRIPTION
+Assert the actual string does not match the expected wildcard pattern.
+.EXAMPLE
+"Hello World" | Assert-NotLike "Hello Ther*"
+.EXAMPLE
+Assert-Like -Actual "Hello World" -Expected "Hello Ther*" -CaseSensitive
+.PARAMETER Actual
+The string value to be tested.
+.PARAMETER Expected
+The expected string value.
+.PARAMETER CustomMessage
+Custom error message. 
+.PARAMETER CaseSensitive
+Test strings match case.
+#>
 function Test-NotLike
 {
     param (

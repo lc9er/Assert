@@ -1,3 +1,17 @@
+<#
+.SYNOPSIS
+Assert the actual value is not of the expected type.
+.DESCRIPTION
+Assert the actual value is not of the expected type. Supports type accelerators. 
+.EXAMPLE 
+Assert-Type -Actual "MyString" -Expected Hashtable
+.PARAMETER Actual
+The value to be tested.
+.PARAMETER Expected
+The type to test the actual type against.
+.PARAMETER CustomMessage
+Define a custom error message.
+#>
 function Assert-NotType {
     param (
         [Parameter(Position=1, ValueFromPipeline=$true)]

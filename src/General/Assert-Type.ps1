@@ -1,3 +1,16 @@
+<#
+.SYNOPSIS
+Assert the actual value is of the expected type.
+.DESCRIPTION
+Assert the actual value is of the expected type. Supports type accelerators. 
+.EXAMPLE 
+Assert-Type -Actual "MyString" -Expected String
+.PARAMETER Actual
+The value to be tested.
+.PARAMETER Expected
+The type to test the actual type against.
+.PARAMETER CustomMessage
+#>
 function Assert-Type {
     param (
         [Parameter(Position=1, ValueFromPipeline=$true)]
