@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+Assert the actual string value is like the expected value.
+.DESCRIPTION
+Assert the actual string matches the expected wildcard pattern.
+.EXAMPLE
+"Hello World" | Assert-Like "Hello W*"
+.EXAMPLE
+Assert-Like -Actual "Hello World" -Expected "Hello W*" -CaseSensitive
+.PARAMETER Actual
+The string value to be tested.
+.PARAMETER Expected
+The expected string value.
+.PARAMETER CustomMessage
+Custom error message. 
+.PARAMETER CaseSensitive
+Test strings match case.
+#>
 function Test-Like
 {
     param (

@@ -1,5 +1,9 @@
 # Change log
 
+## 0.8.2 (November 16, 2018)
+
+- Added documentation for Assert-[True|False|Like]
+
 ## 0.8.1 (August 17, 2017)
 
 - No changes, testing automatic deploy
