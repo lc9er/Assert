@@ -1,3 +1,18 @@
+
+<#
+.SYNOPSIS
+Assert actual value is greater than or equal to expected value.
+.DESCRIPTION
+Will compare numbers or strings.
+.PARAMETER Actual
+The value to compare.
+.PARAMETER Expected
+The value to compare the actual value against.
+.EXAMPLE
+100 | Assert-GreaterThanOrEqual 99
+.EXAMPLE
+Assert-GreaterThanOrEqual -Actual 5000 -Expected 4000 
+#>
 function Assert-LessThan {
     param (
         [Parameter(Position=1, ValueFromPipeline=$true)]
